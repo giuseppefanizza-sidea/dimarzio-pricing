@@ -73,6 +73,8 @@ td { color:var(--text2); }
 .comp .pt { display:inline-block; margin-top:8px; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; }
 .comp-logo { width:20px; height:20px; border-radius:4px; object-fit:contain; flex-shrink:0; }
 .competitor-header { display:flex; align-items:center; gap:14px; margin-bottom:8px; }
+.brand-row { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; }
+.brand-chip { display:inline-block; padding:6px 12px; border-radius:8px; font-size:.82rem; font-weight:700; color:var(--text); background:rgba(255,255,255,0.06); border:1px solid var(--border-light); }
 .competitor-logo { width:36px; height:36px; border-radius:8px; object-fit:contain; border:1px solid var(--border); background:rgba(255,255,255,0.05); flex-shrink:0; }
 .nav-hint { position:fixed; bottom:16px; left:50%; transform:translateX(-50%); font-size:11px; color:var(--dim); opacity:.4; }
 .sources { margin-top:auto; padding-top:12px; border-top:1px solid var(--border); }
@@ -134,20 +136,35 @@ td { color:var(--text2); }
   <div class="g3">
     <div class="card" style="border-left:3px solid var(--cyan)">
       <h3 style="color:var(--cyan);font-size:.95rem;margin-bottom:8px">1. Macro-brand e figure di riferimento</h3>
+      <div class="brand-row">
+        <span class="brand-chip" style="border-color:rgba(66,232,242,0.35)">Fabrizio Romano / SOS Fanta</span>
+        <span class="brand-chip" style="border-color:rgba(66,232,242,0.35)">Di Marzio</span>
+        <span class="brand-chip" style="border-color:rgba(66,232,242,0.35)">Fantacalcio.it</span>
+        <span class="brand-chip" style="border-color:rgba(66,232,242,0.35)">Calciatori Brutti</span>
+        <span class="brand-chip" style="border-color:rgba(66,232,242,0.35)">FantaBoom</span>
+      </div>
       <p style="font-size:.85rem;color:var(--text2);line-height:1.5">Reach nazionale, ruolo da autorità, spesso con brand autonomo (sito, app, eventi).</p>
-      <p style="font-size:.75rem;color:var(--dim);margin-top:8px">Fabrizio Romano/SOS Fanta, Di Marzio, Fantacalcio.it, Calciatori Brutti, FantaBoom</p>
       <div style="margin-top:10px"><span class="tag t-high">Autorità di settore</span></div>
     </div>
     <div class="card" style="border-left:3px solid var(--blue)">
       <h3 style="color:var(--blue);font-size:.95rem;margin-bottom:8px">2. Creator verticali fantacalcio</h3>
+      <div class="brand-row">
+        <span class="brand-chip" style="border-color:rgba(93,140,255,0.35)">Cantarini</span>
+        <span class="brand-chip" style="border-color:rgba(93,140,255,0.35)">Il Profeta</span>
+        <span class="brand-chip" style="border-color:rgba(93,140,255,0.35)">Lisa Offside</span>
+        <span class="brand-chip" style="border-color:rgba(93,140,255,0.35)">Off Samuel</span>
+        <span class="brand-chip" style="border-color:rgba(93,140,255,0.35)">Fantacalcio Tattico</span>
+      </div>
       <p style="font-size:.85rem;color:var(--text2);line-height:1.5">Il fantacalcio è il core del contenuto: consigli d'asta, giornata, alert. Forte interazione community.</p>
-      <p style="font-size:.75rem;color:var(--dim);margin-top:8px">Cantarini, Il Profeta, Lisa Offside, Off Samuel, Fantacalcio Tattico</p>
       <div style="margin-top:10px"><span class="tag t-low">Advisory operativo</span></div>
     </div>
     <div class="card" style="border-left:3px solid var(--violet)">
       <h3 style="color:var(--violet);font-size:.95rem;margin-bottom:8px">3. Micro-creator e nicchie</h3>
+      <div class="brand-row">
+        <span class="brand-chip" style="border-color:rgba(155,108,255,0.35)">Account per squadra/campionato</span>
+        <span class="brand-chip" style="border-color:rgba(155,108,255,0.35)">Potenziali ambassador locali</span>
+      </div>
       <p style="font-size:.85rem;color:var(--text2);line-height:1.5">Coda lunga: account di nicchia, tessuto connettivo della community, slang e meme.</p>
-      <p style="font-size:.75rem;color:var(--dim);margin-top:8px">Account per squadra/campionato, potenziali ambassador locali</p>
       <div style="margin-top:10px"><span class="tag t-mid">Community & referral</span></div>
     </div>
   </div>
@@ -556,7 +573,7 @@ td { color:var(--text2); }
 <!-- S12: Next -->
 <div class="slide">
   <h2>Prossimi passi</h2>
-  <p class="subtitle">Roadmap verso il lancio — si riparte dai 174 utenti del test pilota, poi il mercato estivo si chiude il 1° settembre</p>
+  <p class="subtitle">Roadmap verso il lancio — si riparte dai 174 utenti del test pilota, poi il lancio prosegue nel corso della stagione</p>
   <div style="max-width:720px;width:100%">
     <div style="display:flex;gap:14px;align-items:flex-start;margin-bottom:22px">
       <div style="min-width:38px;width:38px;height:38px;background:var(--turquoise);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--bg);flex-shrink:0">1</div>
@@ -564,14 +581,10 @@ td { color:var(--text2); }
     </div>
     <div style="display:flex;gap:14px;align-items:flex-start;margin-bottom:22px">
       <div style="min-width:38px;width:38px;height:38px;background:var(--gradient-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--bg);flex-shrink:0">2</div>
-      <div><h3 style="color:var(--text);margin-bottom:4px">Deadline Day (1 settembre) <span style="color:var(--dim);font-weight:400;font-size:.8rem">— piano da definire</span></h3><p style="font-size:.92rem">Il giorno più mediatico dell'anno per Di Marzio: notizie flash in tempo reale sulle ultime trattative. Potenziale finestra per riapertura pubblica e sondaggio WTP ("Pagheresti €X/stagione per un assistente AI con la voce di Di Marzio?"), da confermare in base ai tempi di rientro dal fermo servizio.</p></div>
-    </div>
-    <div style="display:flex;gap:14px;align-items:flex-start;margin-bottom:22px">
-      <div style="min-width:38px;width:38px;height:38px;background:var(--gradient-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--bg);flex-shrink:0">3</div>
       <div><h3 style="color:var(--text);margin-bottom:4px">Settembre–Dicembre — Waitlist + lancio in corso di campionato</h3><p style="font-size:.92rem">Aste chiuse ma stagione lunga: le decisioni continuano ogni giornata (formazioni, sostituzioni, infortuni, mercato Serie B/estero ancora aperto). Apertura waitlist e go-live di Stagionale Unlimited e Premium, con l'alert squadra del cuore come feature di richiamo — già validata dal test pilota.</p></div>
     </div>
     <div style="display:flex;gap:14px;align-items:flex-start">
-      <div style="min-width:38px;width:38px;height:38px;background:var(--turquoise);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--bg);flex-shrink:0">4</div>
+      <div style="min-width:38px;width:38px;height:38px;background:var(--turquoise);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--bg);flex-shrink:0">3</div>
       <div><h3 style="color:var(--text);margin-bottom:4px">Gennaio 2027 — Mercato di riparazione, picco di acquisizione</h3><p style="font-size:.92rem">La finestra invernale è il secondo momento di massima attenzione naturale: lancio del one-shot "Guida al mercato di riparazione" e spinta su Premium, cavalcando le trattative di gennaio.</p></div>
     </div>
   </div>
