@@ -562,9 +562,12 @@ td { color:var(--text2); }
   </div>
   <!-- One-shot box -->
   <div style="margin-top:24px;padding:20px 28px;background:linear-gradient(135deg, rgba(60,36,130,0.5) 0%, rgba(66,232,242,0.08) 100%);border-radius:14px;border:1px solid var(--purple);box-shadow:0 0 20px rgba(123,77,255,0.12)">
-    <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
-      <svg width="22" height="22" fill="none" stroke="var(--cyan)" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="3"/><path d="M8 7h8M8 11h5"/><circle cx="16" cy="15" r="3"/><path d="M18 17l2 2"/></svg>
-      <span style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:var(--text)">Prodotti one-shot</span>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <svg width="22" height="22" fill="none" stroke="var(--cyan)" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="3"/><path d="M8 7h8M8 11h5"/><circle cx="16" cy="15" r="3"/><path d="M18 17l2 2"/></svg>
+        <span style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:var(--text)">Prodotti one-shot</span>
+      </div>
+      <span class="tag t-mid">Disponibili da gennaio 2027</span>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px">
       <div style="padding:12px 16px;background:rgba(31,224,200,0.06);border:1px solid rgba(31,224,200,0.2);border-radius:10px">
@@ -691,7 +694,7 @@ td { color:var(--text2); }
     </div>
     <div style="display:flex;gap:14px;align-items:flex-start">
       <div style="min-width:36px;width:36px;height:36px;background:var(--gradient-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--bg);flex-shrink:0;font-size:.9rem">3</div>
-      <div><h3 style="color:var(--text);margin-bottom:4px;font-size:1.05rem">Gennaio 2027: Secondo rialzo + mercato di riparazione</h3><p style="font-size:.88rem">Il mensile sale a <strong style="color:var(--text)">€2,99</strong>, ultimo scaglione pianificato. In concomitanza, lancio del Fondatori Lifetime (max 500 posti), a cavallo con la finestra invernale di mercato, secondo picco naturale di attenzione dopo agosto.</p></div>
+      <div><h3 style="color:var(--text);margin-bottom:4px;font-size:1.05rem">Gennaio 2027: Secondo rialzo + mercato di riparazione</h3><p style="font-size:.88rem">Il mensile sale a <strong style="color:var(--text)">€2,99</strong>, ultimo scaglione pianificato. In concomitanza, lancio dei <strong style="color:var(--text)">prodotti one-shot</strong> (Guida all'Asta, video/audio personalizzati, Fondatori Lifetime max 500 posti), a cavallo con la finestra invernale di mercato, secondo picco naturale di attenzione dopo agosto.</p></div>
     </div>
   </div>
   <button id="btnRestart" onclick="event.stopPropagation();go(0);" style="margin-top:28px;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:10px;border:1px solid rgba(255,255,255,0.22);background:linear-gradient(90deg,#7B4DFF 0%,#42E8F2 100%);color:#fff;font-weight:700;font-size:14px;font-family:inherit;cursor:pointer;box-shadow:0 0 24px rgba(123,77,255,0.48),0 0 36px rgba(66,232,242,0.22);transition:transform 180ms ease,box-shadow 180ms ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">&#8592; Torna all'inizio</button>
